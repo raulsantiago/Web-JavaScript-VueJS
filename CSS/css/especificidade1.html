@@ -5,7 +5,36 @@
     <meta charset="UTF-8">
     <title>Especificidade CSS</title>
     <style>
-        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity
+        
+            Regras gerais
+
+            1. regra com !important
+            2. seletores mais específicos
+            3. Última regra processada (empate)
+        
+         */       
+
+        p{
+            background-color: darkgray;            
+        }
+
+        /* sobreescreve todos acima  por especificidade */
+        .observacao {
+            padding: 200px!important;
+            background-color: chartreuse;
+        }
+
+        /* sobreescreve todos acima por especificidade, exceto item com !important  */
+        p.observacao{
+            padding: 2px;
+            background: linear-gradient(to right, red, yellow);
+        }
+
+
+
+
+
     </style>
 </head>
 
