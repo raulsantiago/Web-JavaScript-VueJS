@@ -11,11 +11,78 @@
             margin: 0;
         }
 
+        html {
+            font-size: 28px;
+        }
+
         body {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
+        div{
+            font-size: 50px;
+        }
+
+        p {
+            /* valores padrões */
+            font-size: 1em;
+            font-size: 100%;
+            font-size: 16px;
+            font-size: 12pt;
+
+             /* unidades absolutas */
+             font-size: 100px; /* tamanho do pixel é relativo */
+             font-size: 72pt; /* 72 pontos é = 1 polegada  */
+             font-size: 1in; /* é 1 polegada  */
+
+            /* unidades relativas */
+            font-size:  2.2em; /* pega a unidade de font mais proxima para aplicar a proporção, neste caso DIV */
+            font-size:  2.2rem; /* pega a unidade de font da raiz do HTML, para aplicar a proporção 2.2 multiplicado */
+            font-size: 50vh; /* 50vh = é o 50% da altura do viewport */
+            font-size: 10vw; /* 50vw = é o 50% da largura do viewport */
+
+            /* tipos de fonts */
+            font-family: monospace;
+            font-family: Georgia, serif; /* Se não encontrar Georgia, utilizará serif */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Indie Flower, cursive;
+
+            font-weight: 900; /* fontes com mais pesos tipo negrito */
+
+            font-style: italic;
+
+            text-transform: uppercase;
+
+            text-decoration: overline underline line-through;           
+
+            word-spacing: 10px; /* espaços entre as palavras */
+            letter-spacing: 5px;
+            line-height:  2.5em;
+            text-align: center;
+            text-align: justify;
+            text-align: right;
+            text-align: left;
+        }
+
+        .botao{
+            font-size: 28px;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 25px;
+        }
+
+        .destaque{
+            color: white;
+            background: tomato;
+            box-shadow: 2px 2px 1px 1px black;
+        }
+
+        .destaque:active{
+            box-shadow: none;
+        }
+
     </style>
 </head>
 

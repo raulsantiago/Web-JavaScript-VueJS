@@ -11,19 +11,40 @@
 
         .c1 {
             background-color: red;
+            float: right;
         }
 
         .c2 {
             background-color: green;
+            clear: right;
+            float: left;
         }
         
         .c3 {
             background-color: blue;
+            clear: both;
         }
 
         .c4 {
             background-color: orange;
+            float: right;
         }
+
+        div {
+            height: 150px;
+            width: 150px;
+        }
+
+        /*
+             float: right; = elemento alocado para direita
+             float: left; = elemento alocado para esqueda
+             clear: right; = elemento limpa o float de outro elemente da direita e vice-versa caso left
+             clear: both; = elemento limpa o float dos dois lados direita e esquerda
+
+             Mais é melhor utilizar Flex Box do que as tecnologias supracitadas
+
+        */
+
     </style>
 </head>
 
